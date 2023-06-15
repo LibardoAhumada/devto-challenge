@@ -1,1 +1,10 @@
-/*# sourceMappingURL=styles.css.map */
+/* Main Structure by Libardo & Gerardo"*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page__container {
+  height: 700px;
+}/*# sourceMappingURL=styles.css.map */

@@ -12,3 +12,15 @@
 // @use './home/post-aside-left';
 // @use './home/post';
 // @use './home/post-aside-right';
+
+/* Main Structure by Libardo & Gerardo"*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.page__container {
+    height: 700px;
+
+}
