@@ -5,3 +5,28 @@
     pointer-events: none;
     text-decoration: none;
 }
+
+.card__header--bg-color {
+    background-color: rgb(57, 58, 65) !important;
+    padding: 12px;
+}
+
+.card-items-container {
+    display: flex;
+}
+
+.card-description {
+    cursor: none;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.follow-bttn {
+    color: #3B49DF;
+    // color: rgb(124, 134, 232) !important;
+    background-color: rgb(237, 238, 252);
+    border: none;
+    padding: 0 14px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
