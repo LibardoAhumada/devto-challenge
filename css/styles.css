@@ -1,1 +1,19 @@
-/*# sourceMappingURL=styles.css.map */
+.sidebar-nav {
+  list-style-type: none;
+}
+
+.profile-pic-bg {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-pic-front {
+  width: 24px;
+  height: 24px;
+}
+
+.list__titles {
+  cursor: none;
+  pointer-events: none;
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */

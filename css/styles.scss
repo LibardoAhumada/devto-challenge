@@ -9,6 +9,6 @@
 
 
 // POST
-// @use './home/post-aside-left';
-// @use './home/post';
-// @use './home/post-aside-right';
+@use './post/post-aside-left';
+@use './post/post';
+@use './post/post-aside-right';
