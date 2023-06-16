@@ -12,6 +12,31 @@
   height: 24px;
 }
 
+.dropdown-font-size {
+  font-size: 12px;
+}
+
+.dropdown-menu {
+  width: 295px !important;
+  height: 222px !important;
+}
+
+.dropdown-header--fontsize {
+  font-size: 14px;
+}
+
+.dropdown-item--fontsize {
+  font-size: 12px;
+}
+
+main {
+  background-color: rgb(244, 244, 245);
+}
+
+.bg__color--card {
+  background-color: rgb(255, 255, 255);
+}
+
 .list__titles {
   cursor: none;
   pointer-events: none;

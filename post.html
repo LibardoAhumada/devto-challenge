@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <div class="container md-p-3">
             <div class="row">
                 <!-- ↓ Sidenav Start -->
                 <div class="col-md-1 d-none d-md-flex justify-content-center post-aside-left">
@@ -51,21 +51,21 @@
                 </div>
                 <!-- ↑ Sidenav End -->
                 <!-- ↓ Post Start -->
-                <div class="col-md-11 col-lg-8">
-                    <article>
+                <div class="col-md-11 col-lg-8 bg__color--card p-0">
+                    <article class="card">
                         <div>
                             <img class="w-100 m-0" src="./assets/post/main/post-header-image.webp" alt="Woman Astrounat Header Image">
                         </div>
-                        <div class="px-5">
+                        <div class="p-3 d-flex">
                             <div class="d-flex position-relative">
                                 <a href="https://dev.to/quine"><img class="profile-pic-bg" src="https://shorturl.at/drvBX" alt="User Profile Animation"></a>
                                 <a href="https://dev.to/fernandezbaptiste"><img class="profile-pic-front position-absolute bottom-0 start-0" src="/assets/post/main/post-profile-picture-1.webp" alt="User Profile Picture"></a>
                             </div>
-                            <div class="ms-2">
-                                <p class="btn">
+                            <div class="ms-2 d-flex flex-column">
+                                <p class="btn p-0 m-0">
                                     <a class="link-underline link-underline-opacity-0" href="https://dev.to/fernandezbaptiste"><b>Bap</b></a> for <a class="link-underline link-underline-opacity-0" href="https://dev.to/quine">Quine</a>
                                 </p>
-                                <label for="#">Posted on Jun 14</label>
+                                <label class="text-body-secondary ms-2" for="#"><small>Posted on Jun 14</small></label>
                             </div>
                         </div>
                         <div class="p-3">
@@ -91,7 +91,7 @@
                                     <span>1</span>
                                 </span>
                             </div>
-                            <h1 class="post__title">5 Surprising Benefits of Contributing to Open Source [Beginner Edition] 🚀</h1>
+                            <h1 class="card-title post__title">5 Surprising Benefits of Contributing to Open Source [Beginner Edition] 🚀</h1>
                             <div class="spec__tags">
                                 <a class="link-underline link-underline-opacity-0" href="https://dev.to/t/beginners" class="discuss__tag--beginners">
                                     <span>#</span>beginners
@@ -107,8 +107,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="article__body">
-                            <p>Hey peeps 👋</p>
+                        <div class="article__body p-3">
+                            <p class="card-text">Hey peeps 👋</p>
                             <p>Hope everyone is doing fantastic!</p>
                             <p>In today’s blog, lets look into why people really want to contribute to open source. 🤔</p>
                             <p>
@@ -132,7 +132,7 @@
                                 <div class="gif__container">
                                     <!-- OB resouce 🔍 -->
                                     <!-- <button type="button" class="gif-button"> -->
-                                    <img class="rounded gif-image" src="https://shorturl.at/nACU8" alt="Build Cool Sh+t Gif Description">
+                                    <img class="rounded gif-image img-fluid" src="https://shorturl.at/nACU8" alt="Build Cool Sh+t Gif Description">
                                     <!-- </button> -->
                                 </div>
                             </p>
@@ -156,7 +156,7 @@
                                 <div class="gif__container">
                                     <!-- OB resouce 🔍 -->
                                     <!-- <button type="button" class="gif-button"> -->
-                                        <img class="rounded gif-image" src="https://shorturl.at/gQTV2" alt="Become Trends Jedi Master Gif Description">
+                                        <img class="rounded gif-image img-fluid"" src="https://shorturl.at/gQTV2" alt="Become Trends Jedi Master Gif Description">
                                         <!-- </button> -->
                                     </div>
                                 </p>
@@ -197,6 +197,25 @@
                                     </div>
                                 </div>
                               </div>
+                        </div>
+                    </article>
+                    <article class="mb-5">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <h2>Top comments(3)</h2>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"></button>
+                                    <ul class="dropdown-menu p-1">
+                                        <li><h3 class="dropdown-header dropdown-header--fontsize text-black">Sort discussion:</h3></li>
+                                        <li><a class="dropdown-item dropdown-item--fontsize" href="#"><strong>Top</strong><div class="text-body-secondary dropdown-font-size text-wrap">Most upvoted and relevant comments will be first</div></a></li>
+                                        <li><a class="dropdown-item dropdown-item--fontsize" href="#">Latest<div class="text-body-secondary dropdown-font-size text-wrap">Most recent comments will be first</div></a></li>
+                                        <li><a class="dropdown-item dropdown-item--fontsize" href="#">Oldest<div class="text-body-secondary dropdown-font-size text-wrap">The oldest comments will be first</div></a></li>
+                                      </ul>
+                                </div>
+                            </div>    
+                            <div>
+                                <button class="btn border">Subscribe</button>
+                            </div>
                         </div>
                     </article>
                 </div>
