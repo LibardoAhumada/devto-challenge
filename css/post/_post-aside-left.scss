@@ -4,6 +4,16 @@
     list-style-type: none;
 }
 
+.author-name-styles:hover {
+    background-color: rgb(244, 244, 245);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.profile-name-pointer {
+    cursor: pointer !important;
+}
+
 .profile-pic-bg {
     width: 40px;
     height: 40px;
@@ -30,6 +40,19 @@
     color: black !important;
 }
 
+.follow-bttn:hover {
+    background-color: rgb(45, 110, 253);
+    color: white;
+}
+
+.subscribe-bttn {
+    font-size: 12px !important;
+}
+
+.subscribe-bttn:hover {
+    background-color: rgb(244, 244, 244) !important;
+}
+
 .btn-size {
     width: 33px !important;
     height: 30px !important;
@@ -53,9 +76,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .post__title {
-        font-size: 36px;
-    }
 
     .main__container,
     .comments__container,
