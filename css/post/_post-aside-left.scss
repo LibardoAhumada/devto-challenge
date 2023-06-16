@@ -12,6 +12,7 @@
 .profile-pic-front {
     width: 24px;
     height: 24px;
+    margin-left: 15px;
 }
 
 .dropdown-font-size {
@@ -29,4 +30,16 @@
 
 .dropdown-item--fontsize {
     font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .main__container,
+    .comments__container {
+        padding: 32px 48px;
+    }
+}
+
+.textarea-comment__width {
+    width: 100% !important;
 }
