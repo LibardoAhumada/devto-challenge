@@ -7,4 +7,69 @@
 
 .page__container {
   height: auto;
+}
+
+.aside__right--card {
+  height: 500px;
+  width: auto;
+}
+
+.header--nav li {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.header--nav > :hover {
+  color: rgb(21, 121, 202);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.container__post {
+  background-color: #c6c6c6;
+}
+
+.post-test--title {
+  margin-left: 37px;
+}
+
+.hashtags--list {
+  margin-left: 37px;
+}
+
+.hashtags--list span {
+  color: rgb(44, 212, 44);
+}
+
+.hashtags--list :nth-child(-n+2):hover:not(span) {
+  background-color: rgb(209, 255, 190);
+  border: 2px solid rgb(180, 248, 150);
+}
+
+.hashtags--list :nth-child(n+3):hover:not(span) {
+  background-color: rgb(200, 200, 200);
+  border: 2px solid rgb(173, 173, 173);
+}
+
+.post-test--post-actions {
+  margin-left: 37px;
+}
+
+.profile-icon--container-image {
+  height: 32px;
+  width: 32px;
+}
+
+.user-info--username {
+  margin: 0;
+}
+
+.user-info--data {
+  line-height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .aside__right--card {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
