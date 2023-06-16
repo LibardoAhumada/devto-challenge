@@ -26,6 +26,7 @@
 .post__title {
   font-size: 28px;
   font-weight: bolder;
+  color: black !important;
 }
 
 .btn-size {
