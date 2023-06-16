@@ -75,6 +75,14 @@ main {
     color: rgb(112, 112, 112);
 }
 
+.multiple__tags {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+    min-height: 40px;
+    color: rgb(112, 112, 112);
+}
+
 .post__title {
     font-size: 28px;
     font-weight: bolder;
@@ -93,6 +101,36 @@ main {
 .subscribe-bttn:hover {
     background-color: rgb(244, 244, 244) !important;
 }
+
+.tags-styles:hover {
+    background-color: rgb(244, 244, 244) !important;
+}
+
+// .tags-styles:hover {
+//     background-color: rgb(165, 164, 164) !important;
+// }
+
+.tags-styles {
+    color: rgb(165, 164, 164);
+    font-size: 14px;
+}
+
+.tags-styles--beginners {
+    color: rgb(47, 142, 70);
+}
+
+.tags-styles--opensource {
+    color: rgb(37, 190, 2);
+}
+
+.tags-styles--career {
+    color: rgb(42, 36, 103);
+}
+
+.tags-styles--github {
+    color: rgb(1, 0, 1);
+}
+
 
 .btn-size {
     width: 33px !important;
