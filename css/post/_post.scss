@@ -79,7 +79,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     column-gap: 1.6em;
-    min-height: 40px;
     color: rgb(112, 112, 112);
 }
 
@@ -104,15 +103,13 @@ main {
 
 .tags-styles:hover {
     background-color: rgb(244, 244, 244) !important;
+    border-radius: 5px;
 }
-
-// .tags-styles:hover {
-//     background-color: rgb(165, 164, 164) !important;
-// }
 
 .tags-styles {
     color: rgb(165, 164, 164);
     font-size: 14px;
+    padding: 4px;
 }
 
 .tags-styles--beginners {
