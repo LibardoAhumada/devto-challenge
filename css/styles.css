@@ -8,7 +8,7 @@
 }
 
 .nav-item:hover {
-  background-color: blue;
+  background-color: rgb(215, 225, 233);
 }
 
 .nav-item:hover .nav-link {
