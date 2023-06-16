@@ -13,6 +13,25 @@
     width: 24px;
     height: 24px;
     margin-left: 15px;
+    border-radius: 50%;
+}
+
+.multiple__reactions {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.2em;
+    min-height: 40px;
+    color: rgb(112, 112, 112);
+}
+
+.post__title {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.btn-size {
+    width: 33px !important;
+    height: 30px !important;
 }
 
 .dropdown-font-size {
@@ -33,13 +52,60 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .post__title {
+        font-size: 36px;
+    }
 
     .main__container,
-    .comments__container {
+    .comments__container,
+    .reaction__section {
         padding: 32px 48px;
+    }
+
+    .reaction__section {
+        padding: 0 48px;
+    }
+
+    .top__comments {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-bottom: 30px;
     }
 }
 
 .textarea-comment__width {
     width: 100% !important;
 }
+
+.reaction__section {
+    button {
+        background-color: unset;
+    }
+
+    a {
+        img {
+            fill-opacity: 0.25;
+        }
+
+        p {
+            color: rgb(112, 112, 112);
+        }
+    }
+}
+
+.reaction__section {
+    button :hover {
+        background-color: rgb(244, 244, 245);
+        border-radius: 5px;
+    }
+}
+
+.reaction__comment--fontsize {
+    font-size: 12px;
+}
+
+
+// .edited-comment-date {
+//     Spacing, ajustar
+//     June 15 · Edited on June 15
+// }
