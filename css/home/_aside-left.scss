@@ -1,0 +1,93 @@
+//$hoverColor: #e2e3f3;
+//$blackIcon: #404040;
+//$hoverIcon: #2f3ab2;
+$backFooter: rgb(229,229,229);
+$buttonRelevant: #090909;
+$hoverButton:rgb(59,73,223);
+$backgroundHoverButton:rgb(255,255,255);
+$colorIcons:#3d3d3d;
+$backgroundHoverReaction:rgba(0,0,0,0.035);
+$font-family-system:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$backgroundBody:rgb(245,245,245);
+$colorTextCategory:#575757;
+$hoverColorSamllIcon: purple;
+
+ 
+.container-ajust{
+    max-width: 1200px;
+}
+
+.secondArea{
+    // margin-top: 100px;
+    margin-top: 65px;
+    padding-top: 15px;
+    background: $backgroundBody;
+}
+
+.left-aside{
+    .list-group-item{
+        border:0!important;
+        img{
+            height: 20px;
+        }
+    }
+    .list-group-item:hover{
+        background-color: $hoverColor;
+        text-decoration: underline;
+    }
+    
+}
+
+
+
+
+.smallIcon{
+    background-color: transparent;
+    height: 20px;
+    width:20px;
+}
+.smallIcon:hover{
+    background-color: $hoverColor;
+}
+
+.tw{
+    background-image: url('../images/twBlack.svg');
+}
+.tw:hover{
+    background-image: url('../images/twHover.svg');
+}
+
+.fb{
+    background-image: url('../images/fbBlack.svg');
+}
+.fb:hover{
+    background-image: url('../images/fbHover.svg');
+}
+
+.git{
+    background-image: url('../images/gitBlack.svg');
+}
+.git:hover{
+    background-image: url('../images/gitHover.svg');
+}
+
+.ig{
+    background-image: url('../images/instaBlack.svg');
+}
+.ig:hover{
+    background-image: url('../images/instaHover.svg');
+}
+
+.dis{
+    background-image: url('../images/discordBlack.svg');
+}
+.dis:hover{
+    background-image: url('../images/discordHover.svg');
+}
+
+.aside1{
+    padding-right: 10px;
+}
+.group-item-aside{
+    background-color: whitesmoke !important;
+}
