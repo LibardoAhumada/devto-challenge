@@ -5,26 +5,30 @@
     padding: 0;
 }
 
-.img-thumbnail {
-    
-text-decoration:none;    
-}
 
-.card-header {
-
-}
-
-
-.card-header {
-   
+.card-header {      
     height: 200px;
     background-color: rgb(57,59,64);
 }
 
+.list-group-item {
+    span {
+      font-size: 8px;
+    }
+  
+    .card-link {
+      font-size: 8px;
+    }
+  
+    small {
+      font-size: 8px;
+    }
+  }
+  
 
-.card-body {
-}
+
 
 .btn {
     background-color: rgb(55,66,204);
 }
+
