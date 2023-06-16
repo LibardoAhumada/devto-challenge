@@ -192,8 +192,8 @@ main {
 .multiple__tags {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 1.5em;
-       column-gap: 1.5em;
+  -moz-column-gap: 1.6em;
+       column-gap: 1.6em;
   min-height: 40px;
   color: rgb(112, 112, 112);
 }
