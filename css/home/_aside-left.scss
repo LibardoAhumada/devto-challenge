@@ -10,7 +10,6 @@ $backgroundBody:rgb(245,245,245);
 $colorTextCategory:#575757;
 $hoverColorSamllIcon: purple;
 
- 
 .container-ajust{
     max-width: 1200px;
 }
@@ -21,7 +20,6 @@ $hoverColorSamllIcon: purple;
     padding-top: 15px;
     background: $backgroundBody;
 }
-
 .left-aside{
     .list-group-item{
         border:0!important;
@@ -32,13 +30,8 @@ $hoverColorSamllIcon: purple;
     .list-group-item:hover{
         background-color: $hoverColor;
         text-decoration: underline;
-    }
-    
+    }   
 }
-
-
-
-
 .smallIcon{
     background-color: transparent;
     height: 20px;
