@@ -7,6 +7,14 @@
     background-color: white !important;
 }
 
+.nav-item:hover {
+    background-color: blue;
+  }
+  
+  .nav-item:hover .nav-link {
+    text-decoration: underline;
+  }
+  
 .contenedorsearch{
     width: 400px !important;
     height: 50px !important;
@@ -24,7 +32,7 @@
     
     &:hover {
       filter: contrast(150%);
-      filter: invert(60%) sepia(100%) saturate(2000%) hue-rotate(200deg); /* Aplica efecto de contraste en azul */
+      filter: invert(60%) sepia(100%) saturate(2000%) hue-rotate(200deg);
     }
   }
   
