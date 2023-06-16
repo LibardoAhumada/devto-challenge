@@ -29,6 +29,10 @@
   background-color: #c6c6c6;
 }
 
+.container__card--post-test {
+  margin-bottom: 10px;
+}
+
 .post-test--title {
   margin-left: 37px;
 }
@@ -53,6 +57,8 @@
 
 .post-test--post-actions {
   margin-left: 37px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .profile-icon--container-image {
@@ -68,6 +74,135 @@
   line-height: 100%;
 }
 
+.link-post {
+  text-decoration: none;
+  color: black;
+}
+
+#icon-number--1 {
+  position: relative;
+  z-index: 5;
+}
+
+#icon-number--2 {
+  position: relative;
+  z-index: 4;
+  right: 7px;
+}
+
+#icon-number--3 {
+  position: relative;
+  z-index: 3;
+  right: 14px;
+}
+
+#icon-number--4 {
+  position: relative;
+  z-index: 2;
+  right: 21px;
+}
+
+#icon-number--5 {
+  position: relative;
+  z-index: 1;
+  right: 28px;
+}
+
+.post-actions--icon-row img {
+  height: 24px;
+  background-color: rgb(232, 232, 232);
+  border-radius: 50%;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+.post-actions--reactions-text {
+  position: relative;
+  right: 30px;
+}
+
+.post-actions--reactions-text:hover {
+  background-color: #c6c6c6;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.post-actions--comment-icon {
+  height: 24px;
+  position: relative;
+  right: 15px;
+}
+
+.post-actions--comment-number {
+  position: relative;
+  right: 20px;
+}
+
+.post-actions--comment-number:hover {
+  background-color: #c6c6c6;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.post-actions--bookmark-icon {
+  height: 24px;
+}
+
+.post-actions--bookmark-icon:hover {
+  background-color: #c6c6c6;
+  cursor: pointer;
+  color: rgb(103, 103, 248);
+  border-radius: 3px;
+}
+
+.post-actions--read-duration {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .post-actions--reactions-text {
+    display: none;
+  }
+  .post-actions--comment-number {
+    display: none;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .post-actions--read-duration {
+    display: none;
+  }
+  .post-actions--bookmark-icon {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .post-test--title {
+    margin-left: 0px;
+  }
+  .hashtags--list {
+    margin-left: 0px;
+  }
+  .post-test--post-actions {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .post-actions--read-duration {
+    display: none;
+  }
+  .post-actions--bookmark-icon {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 1124px) {
+  .post-actions--read-duration {
+    display: block;
+  }
+  .post-actions--bookmark-icon {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 @media only screen and (max-width: 992px) {
   .aside__right--card {
     display: none;
