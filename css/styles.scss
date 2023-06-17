@@ -21,12 +21,31 @@
     box-sizing: border-box; 
 }
 
+.aside__left{
+    background-color: rgb(240, 239, 239);
+}
+.aside__right {
+    background-color: rgb(240, 239, 239);
+
+}
+
+.aside__right--card {
+    width: 255px !important;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 20px;
+    background-color: white;
+}
+
+.right--card-option {
+    border-bottom: .5px solid gray;
+}
 .page__container {
     height: auto;
 
 }
 .aside__right--card {
-    height: 500px;
+    height: 450px;
     width: auto; 
 }
 
@@ -45,11 +64,12 @@
 
 
 .container__post {
-    background-color: #c6c6c6 
+    background-color: rgb(240, 239, 239)
 }
 
 .container__card--post-test {
     margin-bottom: 10px;
+    background-color: #ffffff;
 }
 
 .post-test--title {
