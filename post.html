@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devto Challenge | Post </title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <nav class="navbar fixed-top border-bottom p-0 ">
+                    <div class="container-fluid d-flex justify-content-md-between container-nav">
+                        <div class="d-flex ">
+                            <button class="navbar-toggler d-md-none border border-light" type=" button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                                aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon d-flex align-items-center"></span>
+                            </button>
+                            <a href="#">
+                                <img class="" src="./assets/icons/dev_to_icon.png" alt="">
+                            </a>
+                            
+                            <div class="input-group align-items-center w-auto contenedorsearch ">
+                                <input id="search-bar" type="text" class="form-control d-none h-75 border-end-0  d-md-flex"
+                                    placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
+                                <span class="input-group-text d-none d-md-flex h-75  " id="basic-addon1">
+                                    <img class=" d-none d-md-block"
+                                        src="./assets/icons/icon-glass.svg"
+                                        alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <!-- <a href="#" class="text-decoration-none">
+                                <img class="p-1 d-md-none"src="" alt="">
+                                <button type="button" class="btn btn-outline-primary me-1 d-none d-md-block ">LogIn</button>
+                            </a> -->
+    
+                            <a href="#" class="text-decoration-none">
+                                <img class="p-1 d-md-none"src="./assets/icons/icon-glass.svg" alt="">
+                                <button type="button" class="btn btn-outline-primary  d-none d-md-block ">Create Post</button>
+                            </a>
+    
+    
+                            
+                            <a href="#"><img class="m-3" src="./assets/icons/icon-campaign.svg" alt=""></a>
+    
+                            <div class="dropdown dropstart">
+                                <a class="" id="dropdownm__menu--button" data-bs-toggle="dropdown" aria-expanded="false"> <img class="img-fluid border border-dark rounded-circle " src="./assets/icons/account-avatar-man-svgrepo-com.svg" alt=""></a>
+                                <ul class="dropdown-menu menu-position2" aria-labelledby="dropdownm__menu--button">
+                                  <li><a class="dropdown-item" href="#">Kodemia</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                  <li><a class="dropdown-item" href="#">Create Post</a></li>
+                                  <li><a class="dropdown-item" href="#">Reading list</a></li>
+                                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Sing Out</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DEV Community</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-home.svg"
+                                            alt=""> <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-listings.svg" alt=""><a class="nav-link active"
+                                            aria-current="page" href="#">Listings</a>
+                                    </li>
+                                   
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-podcats.svg" alt=""> <a
+                                            class="nav-link active" aria-current="page" href="#">Podcasts</a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-videos.svg" alt=""> <a
+                                            class="nav-link active" aria-current="page" href="#">Videos</a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-tags.svg" alt=""> <a class="nav-link active"
+                                            aria-current="page" href="#">Tags</a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-faq.svg" alt=""> <a
+                                            class="nav-link active" aria-current="page" href="#">FAQ</a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-forem-shop.svg" alt=""> <a
+                                            class="nav-link active" aria-current="page" href="#">Forem Shop</a>
+                                    </li>
+                                    <li class="nav-item  d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-heart.svg" alt=""> <a class="nav-link active"
+                                            aria-current="page" href="#">Sponsors</a>
+                                    </li>
+                                    <li class="nav-item  d-flex align-items-center justify-content-start">
+                                        <img class="about1" src="./assets/icons/icon-aboutus.svg" alt="">
+                                        <a class="nav-link active"aria-current="page" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item  d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-contact.svg" alt=""> <a
+                                            class="nav-link active" aria-current="page" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item  d-flex align-items-center justify-content-start">
+                                        <img class="about1" src="./assets/icons/icon-guides.svg" alt=""> <a
+                                            class="nav-link active" aria-current="page" href="#">Guides</a>
+                                    </li>
+                                    <li class="nav-item  d-flex align-items-center justify-content-start">
+                                        <img class="about1" src="./assets/icons/icon-software-comparisons.svg" alt=""> <a
+                                            class="nav-link active" aria-current="page" href="#">Software Comparisons</a>
+                                    </li>
+    
+    
+    
+                                    <br>
+                                    <h5>Others</h5>
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-code-of-conduct.svg" alt=""> <a class="nav-link active"
+                                            aria-current="page" href="#">Code of Conduct</a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-privacy-policy.svg" alt=""> <a
+                                            class="nav-link active" aria-current="page" href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center justify-content-start">
+                                        <img src="./assets/icons/icon-terms-of-use.svg" alt=""> <a class="nav-link active"
+                                            aria-current="page" href="#">Terms of use</a>
+                                    </li>
+                                </ul>
+                                </li>
+                                </ul>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <a href="https://twitter.com">
+                                        <img src="./assets/icons/icon-twitter.svg" alt="" class="hover-effect">
+                                    </a>
+                                    <a href="https://www.facebook.com">
+                                        <img src="./assets/icons/icon-facebook.svg" alt="" class="hover-effect">
+                                    </a>
+                                    <a href="https://github.com">
+                                        <img src="./assets/icons/icon-github.svg" alt="" class="hover-effect">
+                                    </a>
+                                    <a href="https://www.instagram.com">
+                                        <img src="./assets/icons/icon-instagram.svg" alt="" class="hover-effect">
+                                    </a>
+                                    <a href="https://discord.com">
+                                        <img src="./assets/icons/icon-discord.svg" alt="" class="hover-effect">
+                                    </a>
+                                    <a href="https://fosstodon.org">
+                                        <img src="./assets/icons/icon-fosstodon.svg" alt="" class="hover-effect">
+                                    </a>
+                                </div>
+                                
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+        <div class="container md-p-3">
+            <div class="nav-spacing"></div>
+            <div class="row">
+                <!-- ↓ Sidenav Start -->
+                <div class="col-md-1 d-none d-md-flex justify-content-center post-aside-left">
+                    <ul class="sidebar-nav pt-5 px-4 me-3">
+                        <li class="nav-item text-center mb-4">
+                            <a href="#">
+                                <span>
+                                    <img src="./assets/icons/reaction-heart.svg" alt="Heart Icon Reaction">
+                                </span>
+                            </a>
+                            <span class="wrapper-icon--count">
+                                25
+                            </span>
+                        </li>
+                        <li class="nav-item text-center mb-4">
+                            <a href="#">
+                                <span>
+                                    <img src="./assets/icons/reaction-comment.svg" alt="Heart Icon Reaction">
+                                </span>
+                            </a>
+                            <span class="wrapper-icon--count">
+                                2
+                            </span>
+                        </li>
+                        <li class="nav-item text-center mb-4">
+                            <a href="#">
+                                <span>
+                                    <img src="./assets/icons/reaction-save.svg" alt="Heart Icon Reaction">
+                                </span>
+                            </a>
+                            <span class="wrapper-icon--count">
+                                3
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    <img src="./assets/icons/reaction-dropdown.svg" alt="Heart Icon Reaction">
+                                </span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- ↑ Sidenav End -->
+                <!-- ↓ Post Start -->
+                <div class="col-md-11 col-lg-8 bg__color--card p-0">
+                    <article class="card">
+                        <div>
+                            <img class="w-100 m-0" src="./assets/post/main/post-header-image.webp" alt="Woman Astrounat Header Image">
+                        </div>
+
+                        <div class="main__container">
+                            <div class="p-3 d-flex">
+                                <div class="d-flex position-relative">
+                                    <a href="https://dev.to/quine"><img class="profile-pic-bg" src="https://shorturl.at/drvBX" alt="User Profile Animation"></a>
+                                    <a href="https://dev.to/fernandezbaptiste"><img class="profile-pic-front position-absolute bottom-0 start-0" src="/assets/post/main/post-profile-picture-1.webp" alt="User Profile Picture"></a>
+                                </div>
+                                <div class="ms-2 d-flex flex-column">
+                                    <p class="btn p-0 m-0">
+                                        <a class="link-underline link-underline-opacity-0" href="https://dev.to/fernandezbaptiste"><b>Bap</b></a> for <a class="link-underline link-underline-opacity-0" href="https://dev.to/quine">Quine</a>
+                                    </p>
+                                    <label class="text-body-secondary ms-2" for="#"><small>Posted on Jun 14</small></label>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <div class="multiple__reactions">
+                                    <span class="multiple__reaction--love">
+                                        <img src="./assets/icons/reaction-love.svg" alt="Love Reaction">
+                                        <span>15</span>
+                                    </span>
+                                    <span class="multiple__reaction--unicorn">
+                                        <img src="./assets/icons/reaction-unicorn.svg" alt="Unicorn Reaction">
+                                        <span>2</span>
+                                    </span>
+                                    <span class="multiple__reaction--exploding-head">
+                                        <img src="./assets/icons/reaction-exploding-head.svg" alt="Exploding Head Reaction">
+                                        <span>5</span>
+                                    </span>
+                                    <span class="multiple__reaction--raised-hands">
+                                        <img src="./assets/icons/reaction-raised-hands.svg" alt="Raised Hands Reaction">
+                                        <span>2</span>
+                                    </span>
+                                    <span class="multiple__reaction--like">
+                                        <img src="./assets/icons/reaction-fire.svg" alt="Fire Reaction">
+                                        <span>1</span>
+                                    </span>
+                                </div>
+                                <h1 class="card-title post__title">5 Surprising Benefits of Contributing to Open Source [Beginner Edition] 🚀</h1>
+                                <div class="spec__tags multiple__tags">
+                                    <a class="link-underline link-underline-opacity-0 tags-styles" href="https://dev.to/t/beginners" class="discuss__tag--beginners">
+                                        <span class="tags-styles--beginners">#</span>beginners
+                                    </a>
+                                    <a class="link-underline link-underline-opacity-0 tags-styles" href="https://dev.to/t/opensource" class="discuss__tag--opensource">
+                                        <span class="tags-styles--opensource">#</span>opensource
+                                    </a>
+                                    <a class="link-underline link-underline-opacity-0 tags-styles" href="https://dev.to/t/career" class="discuss__tag--career">
+                                        <span class="tags-styles--career">#</span>career
+                                    </a>
+                                    <a class="link-underline link-underline-opacity-0 tags-styles" href="https://dev.to/t/github" class="discuss__tag--github">
+                                        <span class="tags-styles--github">#</span>github
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="article__body p-3">
+                                <p class="card-text">Hey peeps 👋</p>
+                                <p>Hope everyone is doing fantastic!</p>
+                                <p>In today’s blog, lets look into why people really want to contribute to open source. 🤔</p>
+                                <p>
+                                    <em>“For their career growth”</em> you say?
+                                </p>
+                                <p>Evidently, that’s a big component..</p>
+                                <p>However, did you know that it is actually one of the few reasons why you should do it? 😮</p>
+                                <p>Let’s see together the 5 reasons of why its <strong>absolutely brilliant</strong> to become an open source coder 👯‍♀️</p>
+                                <p><strong>tl;dr</strong></p>
+                                <ol>
+                                    <li>Build cool sh*t 👷‍♀️</li>
+                                    <li>Be a Real Sponge → learn, learn, learn 🧠</li>
+                                    <li>Become a true socialite: a very positive effect on network quality 📈</li>
+                                    <li>Become the “trends” jedi master 📰</li>
+                                    <li>Make tangible impact on the world 🌍</li>
+                                </ol>
+                                <hr>
+                                <h2><a class="post__title list__titles" name="1-build-cool-sht" href="#1-build-cool-sht"><strong>1. Build cool sh*t</strong>🏗️</a></h2>
+                                <p>Let’s start with a bang: if you are a creator at heart (and I know you are!) then you just get to build and ship cool stuff! 👷‍♀️</p>
+                                <p>
+                                    <div class="gif__container d-flex justify-content-center">
+                                        <!-- OB resouce 🔍 -->
+                                        <!-- <button type="button" class="gif-button"> -->
+                                        <img class="rounded gif-image img-fluid" src="https://shorturl.at/nACU8" alt="Build Cool Sh+t Gif Description">
+                                        <!-- </button> -->
+                                    </div>
+                                </p>
+                                <p>If you are interested in coding then I’m sure that growing up you enjoyed building, creating and experimenting with things.</p>
+                                <p>By contributing to open source, you will continue to do exactly that whilst working on projects you are passionate about. The craziest thing is that some of these projects have the potential to change the world as we know it! 🌎</p>
+                                <hr>
+                                <h2><a class="post__title list__titles" name="2-be-a-real-knowledge-sponge" href="#1-be-a-real-knowledge-esponge"><strong>2. Be a Real Knowledge Sponge </strong>🧽</a></h2>
+                                <p>Contributing to open source can help you demonstrate your skills to potential employers - that’s a fact.</p>
+                                <p>This is the reason we built <a href="https://shorturl.at/goGN3">quine.sh</a> where we help any developers (from beginner to senior) find the right projects to contribute to on Github.</p>
+                                <p>However, sharing your contributions on GitHub allows you to meet other outstanding coders.</p>
+                                <p>The saying <em>“you are the average of the 5 people you hang out the most with”</em> rings very true here.</p>
+                                <p>If you spend time with people who are better than you at coding, you will just get sooo much better than if you learn by yourself. 🚀</p>
+                                <hr>
+                                <h2><a class="post__title list__titles" name="3-become-a-socialite" href="#3-become-a-socialite"><strong>3. Become a true socialite </strong>💅</a></h2>
+                                <p>As a result of the above, a benefit of contributing to open source is that you can build a network of cool peeps!</p>
+                                <p>By working with other contributors and participating in open source communities, you can connect with people who share your interests and passion for tech.</p>
+                                <p>This can lead to new opportunities, collaborations, and most certainly: <strong>friendships</strong>! 👯‍♀️</p>
+                                <hr>
+                                <h2><a class="post__title list__titles" name="4-become-the-trends-jedi-master" href="#4-become-the-trends-jedi-master"><strong>4. Become the “trends” jedi master </strong>📈</a></h2>
+                                <p>
+                                    <div class="gif__container d-flex justify-content-center">
+                                        <!-- OB resouce 🔍 -->
+                                        <!-- <button type="button" class="gif-button"> -->
+                                            <img class="rounded gif-image img-fluid"" src="https://shorturl.at/gQTV2" alt="Become Trends Jedi Master Gif Description">
+                                            <!-- </button> -->
+                                        </div>
+                                    </p>
+                                <p>Contributing to open source can help you stay up-to-date with the latest trends and technologies in the industry.</p>
+                                <p>By following open source projects and participating in discussions, you will always be at the fore-front of emerging technologies, best practices and innovative solutions.</p>
+                                <p>This can help you stay ahead of the curve and remain competitive in the job market. 🌟</p>
+                                <hr>
+                                <h2><a class="post__title list__titles" name="5-you-wanted-to-make-impact-heres-your-chance" href="#5-you-wanted-to-make-impact-heres-your-chance"><strong>5. You wanted to make impact? Here’s your chance.. </strong>🙌</a></h2>
+                                <p>Finally, contributing to open source is just an outstanding way to give back to the community and make a positive impact on the world.</p>
+                                <p>In fact, I likely should have started with this point as so many people in the community are just <strong>givers at heart.</strong></p>
+                                <p>This is why us “coders” are known to be both nerdy (that’s for sure 🤪) but also good people.</p>
+                                <p>We want to help improve software and technology that is used by millions of people around the world.</p>
+                                <p>This is just very rewarding so if you are lacking some sense of purpose in your day-to-day, open source may be what you waited for your whole life (I know I’m being a tad bit dramatic 🤓).</p>
+                                <p>One last reason I forgot to mention and which could ring true for some people:</p>
+                                <p>You should contribute to open source because it feels pretty dope to say at a dinner table <strong><em>“I’m an open source coder 💅”.</em></strong></p>
+                                <p>(alright enough with the ego strokes 🤪).</p>
+                                <hr>
+                                <p>All in all, contributing to open source is where you want to be because:</p>
+                                <p>✅ You benefit the community</p>
+                                <p>✅ You hang around with great people</p>
+                                <p>✅ You understand the industry</p>
+                                <p>✅ You learn more than you breathe</p>
+                                <p>✅ You feel good for giving back</p>
+                                <p>✅ and you build cool sh*t</p>
+                                <p>So why not get involved today and start making a difference? 🌟</p>
+                                <p>If you're looking for a platform to discover projects aligned with your interests, language preference, and do it, whilst not spending a penny, visit <strong><a href="https://shorturl.at/goGN3"">quine.sh</a></strong> 🫶. It's a great space to find free projects where you can contribute and make a difference!</p>
+                                <div class="card">
+                                    <h5 class="card-header card__header--bg-color"></h5>
+                                    <div class="card-body profile-name-pointer">
+                                        <div class="card-items-container">
+                                            <a href="https://dev.to/quine"><img class="profile-pic-bg" src="https://shorturl.at/drvBX" alt="User Profile Animation"></a>
+                                            <h5 class="card-title ms-2 me-2 mt-1 profile-name-pointer"><a class="list__titles text-black" name="5-you-wanted-to-make-impact-heres-your-chance" href="https://dev.to/quine"><strong>Quine</strong></a></h5>
+                                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                            <button class="follow-bttn rounded" type="button" label="Follow organization: Quine">Follow</button>
+                                        </div>
+                                        <div class="ms-5">
+                                            <a class="card-description text-secondary" href="https://dev.to/quine">Build rep with every merge ✨ Wear your stats in your GitHub README</a>
+                                        </div>
+                                    </div>
+                                </div>    
+                              </div>
+                        </div>
+
+                        <hr>
+                        <section class="comments__container mb-5 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex mb-4">
+                                    <h2 class="top__comments">Top comments (2)&ensp;</h2>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-primary btn-size dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"></button>
+                                        <ul class="dropdown-menu p-1">
+                                            <li><h3 class="dropdown-header dropdown-header--fontsize text-black">Sort discussion:</h3></li>
+                                            <li><a class="dropdown-item dropdown-item--fontsize" href="#"><strong>Top</strong><div class="text-body-secondary dropdown-font-size text-wrap">Most upvoted and relevant comments will be first</div></a></li>
+                                            <li><a class="dropdown-item dropdown-item--fontsize" href="#">Latest<div class="text-body-secondary dropdown-font-size text-wrap">Most recent comments will be first</div></a></li>
+                                            <li><a class="dropdown-item dropdown-item--fontsize" href="#">Oldest<div class="text-body-secondary dropdown-font-size text-wrap">The oldest comments will be first</div></a></li>
+                                          </ul>
+                                    </div>
+                                </div>    
+                                <div>
+                                    <button class="btn border subscribe-bttn" type="button" label="Profile subscription: Quine">Subscribe</button>
+                                </div>
+                            </div>
+                            <!-- 1ST Comment -->
+                            <div class="d-flex mb-3">
+                                <img class="profile-pic-front me-2" src="./assets/post/main/post-profile-picture-nav.webp" alt="">
+                                    <textarea class="form-control textarea-comment__width" placeholder="Add to the discussion" id="floatingTextarea2" style="height: 100px;"></textarea>
+                                    <label for="floatingTextarea2"></label>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img class="profile-pic-front me-2" src="./assets/post/main/post-comment-profile-picture-1.webp" alt="">
+                                    <div class="card w-100 h-100 p-3 comments__container">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p>
+                                                <a class="author-name-styles text-decoration-none text-secondary" href=""><span>Salah Eddine Lalami ·</span></a>
+                                                <a class="author-name-styles text-decoration-none text-secondary edited-comment-date" href="">
+                                                    <span><small>June 15 ·</small></span>
+                                                    <span><small>Edited on June 15</small></span>
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <a href=""><img src="./assets/icons/reaction-dots-menu.svg" alt=""></a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>Awesome!<br>
+                                                I invite anyone to contribute to IDURAR Open Source ERP / CRM (Invoice / Inventory / Accounting / HR) Based on Node.js / React.js : <br>
+                                                <a href="https://github.com/idurar/idurar-erp-crm" rel="nofollow">github.com/idurar/idurar-erp-crm</a></p>
+                                        </div>
+                                        <hr style="margin-left: 35%; width:25%">
+                                        <a href=""><img class="w-100" src="./assets/post/main/comment-image.png" alt=""></a>
+                                    </div>
+                                    
+                            </div>
+                            <div class="reaction__section">
+                                <button class="rounded border-0">
+                                    <a class="d-flex text-decoration-none px-2" href="#">
+                                        <img class="me-2" src="./assets/icons/reaction-like.svg" alt="Likes Counter Icon">
+                                        <p class="reaction__comment--fontsize mb-0">2 likes</p>
+                                    </a>
+                                </button>
+                                <button class="rounded border-0">
+                                    <a class="d-flex text-decoration-none px-2" href="#">
+                                        <img class="me-2" src="./assets/icons/reaction-comment.svg" alt="Reply Icon">
+                                        <p class="reaction__comment--fontsize mb-0">Reply</p>
+                                    </a>
+                                </button>
+                            </div>
+                            <!-- 2ND Comment -->
+                            <div class="d-flex mb-3">
+                                <img class="profile-pic-front me-2" src="./assets/post/main/post-comment-profile-picture-2.webp" alt="">
+                                    <div class="card w-100 h-100 p-3 comments__container">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p>
+                                                <a class="author-name-styles text-decoration-none text-secondary" href=""><span>Cassidy Williams ·</span></a>
+                                                <a class="author-name-styles text-decoration-none text-secondary edited-comment-date" href="">
+                                                    <span><small>June 16 ·</small></span>                                                </a>
+                                            </p>
+                                            <p>
+                                                <a href=""><img src="./assets/icons/reaction-dots-menu.svg" alt=""></a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>Great! Thanks for sharing!&ensp;😊<br></p>
+                                            <!-- &nbsp; -->
+                                        </div>
+                                    </div>
+                                    
+                            </div>
+                            <div class="reaction__section">
+                                <button class="rounded border-0">
+                                    <a class="d-flex text-decoration-none px-2" href="#">
+                                        <img class="me-2" src="./assets/icons/reaction-like.svg" alt="Likes Counter Icon">
+                                        <p class="reaction__comment--fontsize mb-0">1 like</p>
+                                    </a>
+                                </button>
+                                <button class="rounded border-0">
+                                    <a class="d-flex text-decoration-none px-2" href="#">
+                                        <img class="me-2" src="./assets/icons/reaction-comment.svg" alt="Reply Icon">
+                                        <p class="reaction__comment--fontsize mb-0">Reply</p>
+                                    </a>
+                                </button>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-3 col-lg-3">
+                    <!-- Aside derecho -->
+                    <div class="row d-none d-sm-block d-md-none d-lg-block">
+                      <div class="col col-12">
+                        <div class="card my-3">
+                          <div class="card-header bg-dark">                
+                            <h1 class="margen" style="height: 9px;">
+                              <div class="img-rounded card-img-top">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--g-OhOyJs--/c_fill,f_auto,fl_progressive,h_45,q_66,w_45/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/4224/9191d30a-cfa3-4f20-804a-ab1beeddec8e.gif" class="img_post" alt="logo_query">  
+                             </h1> <!--//Cierrra imagen              -->
+                              </div> <!-- //close header card 1                      -->
+                            
+                              <div class="card-body text-start">
+                              <h5 class="card-title">
+                                <strong>Quine</strong> </h5> 
+                                
+                              <div>
+                                <a href="#" class="btn btn-primary d-flex text-center text-center">Follow</a>
+                                <p class="card-text">Build verifiable experience by solving GitHub Issues 💎</p>
+                              </div>               
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="card my-3">
+                          <div class="card-header" style="font-size: large; border: none;"> 
+                            <strong>More from</strong>
+                            <a href="#"><strong>Quine</strong> </a>
+                          </div>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item"style="border:none;">
+                              <span style="font-size: 20px;">NVIDIA's $200B Overnight Gain: Trending CUDA Repos Revealed! ⚡️</span>
+                              <ul class="list-icon list-unstyled d-flex flex-row">
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#opensource</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#onvidia</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#cuda</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#github</a>
+                              </ul>
+                            </li>
+                            <li class="list-group-item"style="border:none;">
+                              What is Open Source and Why is it so Goddamn Popular?
+                              <ul class="list-icon list-unstyled d-flex flex-row">
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#beginners</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#opensource</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#codenewbie</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#github</a>
+                              </ul>
+                            </li>
+                            <li class="list-group-item">
+                              Crushing Your First Open Source Contribution: 5 Tips for Beginners 🚀
+                              <ul class="list-icon list-unstyled d-flex flex-row">
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#beginners</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#opensource</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#github</a>
+                                <a href="#" class="card-link" style="font-size: 11px; text-decoration: none; color:inherit">#development</a>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <div class="col-12">
+                            <div class="card my-3">
+                              <div class="card-body">
+                                <div class="img-rounded card-img-top">
+                                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--g-OhOyJs--/c_fill,f_auto,fl_progressive,h_25,q_66,w_25/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/4224/9191d30a-cfa3-4f20-804a-ab1beeddec8e.gif" class="img_post" alt="logo_query">
+                                  <span class="card-title">
+                                    <small>Quine</small>
+                                    <span id="menupoints" style="float: right;">&#8230</span>
+                                  </span> 
+                                </div>
+                                <div class="card" style="width: 17rem; border: none">
+                                  <img src="./assets/post/aside-right/contrib-issue.png" class="card-img-top" alt="...">
+                                </div>
+                                <a href="#">
+                                  <h4><strong>Earn Verifiable Reputation by Solving GitHub Issues</strong></h4>                  
+                                </a>               
+                                <p class="card-text">Discover the best good-first-issues in the languages & topics of your preference.</p>                
+                              </div>
+                              <div class="d-grid gap-2 col-12 col-md-11 mx-auto">
+                                <button type="button" class="btn btn-outline-primary text-center" style="width: 100%;">Learn More</button>                
+                              </div>
+                            </div>
+                          </div>
+                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- ↑ Post End -->
+            </div>
+            <!-- Right Aside Start -->
+                
+            <!-- Right Aside End -->
+
+            <div class="footer d-flex justify-content-center mt-5">
+                <div class="footer__container fw-medium"  id="footer__container">
+                    <p class="footer__description">
+                        <a href="https://dev.to/" class="company__link text-center">DEV Community</a>
+                        A constructive and inclusive social network for software developers. With you every step of your journey.
+                    </p>
+                    <ul  id="nav_links_list" class="footer__nav-links d-flex gap-2 justify-center flex-wrap">
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/"  class="text-decoration-none">Home</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/listings" class="text-decoration-none">Listings</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/pod" class="text-decoration-none">Podcasts</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/videos" class="text-decoration-none">Videos</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/tags" class="text-decoration-none">Tags</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/faq" class="text-decoration-none">FAQ</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://shop.forem.com/" class="text-decoration-none">Forem Shop</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/sponsorships" class="text-decoration-none">Sponsors</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/about" class="text-decoration-none">About</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/contact" class="text-decoration-none">Contact</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/guides" class="text-decoration-none">Guides</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/software-comparisons" class="text-decoration-none">Software Comparisons</a>
+                        </li>
+                    </ul>
+                    <ul id="nav_links_list" class="footer__nav-links d-flex gap-2 justify-center flex-wrap">
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/code-of-conduct" class="text-decoration-none">Code of Conduct</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/privacy" class="text-decoration-none">Privacy Policy</a>
+                            <span class="dot text-secondary">•</span>
+                        </li>
+                        <li class="footer__nav-link flex items-center">
+                            <a href="https://dev.to/terms" class="text-decoration-none">Terms of use</a>
+        
+                        </li>
+                    </ul>
+                    <div class="footer__credits mb-5">
+                        <p>
+                            Built on
+                            <a href="https://www.forem.com/" class="text-decoration-none">Forem</a>
+                            - the 
+                            <a href="https://dev.to/t/opensource" class="text-decoration-none">Open Source</a>
+                            software that powers
+                            <a href="https://dev.to/" class="text-decoration-none">DEV</a>
+                            and other inclusive communities.
+                        </p>
+                        <p>
+                            Made with love and 
+                            <a href="https://dev.to/t/rails" class="text-decoration-none">Ruby on rails</a>
+                            . DEV Community
+                            <span class="copyright">©</span>
+                            2026 - 2023
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    
+        </div>
+                <!-- ↓ Post Start -->
+
+                <!-- ↑ Post End -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

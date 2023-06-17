@@ -1,7 +1,7 @@
 // Aquí irán importados con '@use' todas las secciones, divididas por 'Home' y por 'Post'
 
 // HOME
-// @use './home/navbar';
+ @use './home/navbar';
 // @use './home/aside-left';
 // @use './home/main';
 // @use './home/aside-right';
@@ -9,6 +9,6 @@
 
 
 // POST
-// @use './home/post-aside-left';
-// @use './home/post';
-// @use './home/post-aside-right';
+@use './post/post-aside-left';
+@use './post/post';
+@use './post/post-aside-right';
