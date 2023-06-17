@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(214, 214, 214) !important;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.card__login {
+  max-width: 640px !important;
+  background-color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 40px;
+}
+
+.registration__actions--providers {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.registration_actions--providers > * {
+  height: 30px;
+}
+
+.forem-bg {
+  background-color: rgb(13, 54, 64);
+}
+
+.twitter-bg {
+  background-color: rgb(58, 160, 242);
+}
+
+.nav__site-logo {
+  margin-right: auto;
+}
+
+.login__icon--color {
+  color: white;
+}
+
+.login__field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__hr-label {
+  width: 42px;
+}
+
+#nav_links_list {
+  list-style: none;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.footer {
+  background-color: rgb(229, 229, 229);
+}
+
+.footer__container {
+  background-color: rgb(229, 229, 229);
+}
+
+.footer__description {
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+}
+
+.footer__credits {
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-logo__img {
+  width: 50px;
+  height: 40px;
+}
+
+.footer {
+  background-color: #a0a0a0;
+}
+
+@media only screen and (min-width: 768px) {
+  .inline_block-hamburger {
+    display: none;
+  }
+  .hamburger-button {
+    display: none;
+  }
+  .nav__site-logo {
+    margin-right: 0;
+  }
+  .header__search-field {
+    margin-right: auto;
+  }
+  .nav__right-search {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__search-field {
+    display: none;
+  }
+  .top-nav--login {
+    display: none;
+  }
+  .container_hamburger {
+    align-self: flex-end;
+  }
+  .card__login {
+    padding: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}/*# sourceMappingURL=styles.css.map */

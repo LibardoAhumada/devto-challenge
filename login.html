@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Desafia-Bootstrap</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- empezaremos con header: aquí ingresaremos la nav bar--> 
+
+    <!-- <div class="header">
+        <div class="header__container">
+            <span class="container-hamburger">
+                <button class="hamburger-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a3t9cpesmy4eq65q7ntdjkku4jkx9onc" class="hamburger-icon">
+                        <title id="a3t9cpesmy4eq65q7ntdjkku4jkx9onc">Navigation menu</title>
+                        <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+                    </svg>
+                </button>
+            </span>
+            
+            <a href="" class="nav__site-logo" aria-label="DEV Community Home">
+                <img class="site-logo__img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="DEV Community">
+            </a>
+        
+            <div class="header__search-field">
+                <form method="get" action="/search" role="search" accept-charset="UTF-8">
+                    <input name="utf8" type="hidden" value="✓">
+                    <div class="header-fields header-fields--horizontal">
+                        <div class="header-field flex-1 relative">
+                            <input class="crayons-header--search-input crayons-textfield" type="text" id="" name="q" placeholder="Search..." autocomplete="off" aria-label="Search term">
+                            <button type="submit" aria-label="Search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="crayons-icon c-btn__icon" focusable="false">
+                                    <path d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="nav__right-search">
+                <a class="right__search-icon" id="search-link" aria-label="Search" href="/search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="afgpulyiigl5zt8ihwv1i4hcimsswipk" class="crayons-icon">
+                        <title id="afgpulyiigl5zt8ihwv1i4hcimsswipk">Search</title>
+                        <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div id="top__nav-actions" class="flex">
+                    <span class="top-nav--login rounded">
+                        <a href="#" class="c-link--block mr-2 whitespace-nowrap ml-auto">Log in</a>
+                    </span>
+                    <a href="#" class="create__account-btn"> <button>Create account</button></a>
+            </div>
+        </div>  
+    </div> -->
+    
+<!-- Login section of page starts here -->
+    <div class="main">
+        <div class="card__login" style="width: 40rem;">
+            <div class="card-body text-center">
+                <div class="registration__content">
+                    <h1 class="registration__title mb-0 ">Welcome to the DEV community</h1>
+                    <p class="registration__description mb-4">Dev community is a community of 1,082,605 amazing developers</p>
+                </div>
+                <div class="registration__actions">
+                    <div class="registration__actions--providers text-white">
+                        <button  class="registration__action--option d-flex justify-content-center bg-dark rounded text-white fw-bold p-3" >
+                            <img class="login__icon--color me-2" src="./assets/icons/1icon-apple.svg" alt="">
+                            <span>Continue with Apple</span>
+                            
+                        </button>
+                        <button class="registration__action--option d-flex justify-content-center forem-bg rounded text-white fw-bold p-3">
+                            <img class="me-2" src="./assets/icons/2icon-forem.svg" alt="">
+                            <span>Continue with Forem</span>
+                        </button>
+                        <button class="registration__action--option d-flex justify-content-center bg-secondary rounded text-white fw-bold p-3">
+                            <img class="me-2 text-light" src="./assets/icons/3icon-github-login.svg" alt="">
+                           <span> Continue with GitHub</span>
+                        </button>
+                        <button class="registration__action--option d-flex justify-content-center twitter-bg rounded text-white fw-bold p-3">
+                            <img class="me-2" class="img__twitter" src="./assets/icons/4icon-twitter-login.svg">
+                            <span>Continue with Twitter</span>
+                        </button>
+                    </div>
+                    <div class="registration__actions--email">
+                        <div class="registration__hr p-4">
+                            <span class="registration__hr-label">Have a password? Continue with your email address</span>
+                        </div>
+                        <form action="" class="login__form">
+                            <div class="login__field-container">
+                                <label for="user_email" class="email-label d-flex justify-content-start p-3 fw-bold">Email</label>
+                                <input type="email" id="user_email" class="email-field form-control">
+                            </div>
+                            <div class="login__field-container">
+                                <label for="user_password" class="password-label d-flex justify-content-start p-3 fw-bold">Password</label>
+                                <input type="password" id="user_password" class="password-field form-control">
+                            </div>
+                            <div class="login__checkbox d-flex justify-content-start p-3">
+                                <input name="user[remember_me]" type="hidden" value="0" autocomplete="off" >
+                                <input type="checkbox" checked="checked" class="checkbox_box me-2" name="user[remember_me]" id="user_remember_me" value="1" >
+                                <label for="user_remember_me" class="checkbox-label">Remember me</label>
+                            </div>
+                            <div class="login__form--continue">
+                                <button type="submit" name="commit" value="Continue" data-disable-with="Continue" class="continue-btn--lw-100 btn btn-primary w-100 p-2 ">Continue</button>
+                            </div>  
+                        </form>
+                        <p class="pt-6 fs-s align-center pt-4">
+                            <a href="https://dev.to/users/password/new" class="text-decoration-none">I forgot my password</a>
+                        </p>
+                    </div>
+                
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__container fw-medium"  id="footer__container">
+            <p class="footer__description">
+                <a href="https://dev.to/" class="company__link text-center">DEV Community</a>
+                A constructive and inclusive social network for software developers. With you every step of your journey.
+            </p>
+            <ul  id="nav_links_list" class="footer__nav-links d-flex gap-2 justify-center flex-wrap">
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/"  class="text-decoration-none">Home</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/listings" class="text-decoration-none">Listings</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/pod" class="text-decoration-none">Podcasts</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/videos" class="text-decoration-none">Videos</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/tags" class="text-decoration-none">Tags</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/faq" class="text-decoration-none">FAQ</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://shop.forem.com/" class="text-decoration-none">Forem Shop</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/sponsorships" class="text-decoration-none">Sponsors</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/about" class="text-decoration-none">About</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/contact" class="text-decoration-none">Contact</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/guides" class="text-decoration-none">Guides</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/software-comparisons" class="text-decoration-none">Software Comparisons</a>
+                </li>
+            </ul>
+            <ul id="nav_links_list" class="footer__nav-links d-flex gap-2 justify-center flex-wrap">
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/code-of-conduct" class="text-decoration-none">Code of Conduct</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/privacy" class="text-decoration-none">Privacy Policy</a>
+                    <span class="dot text-secondary">•</span>
+                </li>
+                <li class="footer__nav-link flex items-center">
+                    <a href="https://dev.to/terms" class="text-decoration-none">Terms of use</a>
+
+                </li>
+            </ul>
+            <div class="footer__credits">
+                <p>
+                    Built on
+                    <a href="https://www.forem.com/" class="text-decoration-none">Forem</a>
+                    - the 
+                    <a href="https://dev.to/t/opensource" class="text-decoration-none">Open Source</a>
+                    software that powers
+                    <a href="https://dev.to/" class="text-decoration-none">DEV</a>
+                    and other inclusive communities.
+                </p>
+                <p>
+                    Made with love and 
+                    <a href="https://dev.to/t/rails" class="text-decoration-none">Ruby on rails</a>
+                    . DEV Community
+                    <span class="copyright">©</span>
+                    2026 - 2023
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
