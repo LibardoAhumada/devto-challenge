@@ -347,4 +347,28 @@ main {
 
 .nav-spacing {
   margin-top: 63px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card-header {
+  height: 200px;
+  background-color: rgb(57, 59, 64);
+}
+
+.list-group-item span {
+  font-size: 8px;
+}
+.list-group-item .card-link {
+  font-size: 8px;
+}
+.list-group-item small {
+  font-size: 8px;
+}
+
+.btn {
+  background-color: rgb(55, 66, 204);
 }/*# sourceMappingURL=styles.css.map */
