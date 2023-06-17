@@ -30,7 +30,6 @@
 .hover-effect {
   transition: filter 0.3s ease;
 }
-
 .hover-effect:hover {
   filter: contrast(150%);
   filter: invert(60%) sepia(100%) saturate(2000%) hue-rotate(200deg);
@@ -41,7 +40,6 @@
     display: flex;
   }
 }
-
 .sidebar-nav {
   list-style-type: none;
 }
@@ -72,7 +70,7 @@
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 2.2em;
-  column-gap: 2.2em;
+       column-gap: 2.2em;
   min-height: 40px;
   color: rgb(112, 112, 112);
 }
@@ -123,24 +121,20 @@
 }
 
 @media only screen and (min-width: 768px) {
-
   .main__container,
   .comments__container,
   .reaction__section {
     padding: 32px 48px;
   }
-
   .reaction__section {
     padding: 0 48px;
   }
-
   .top__comments {
     font-size: 24px;
     margin-left: 20px;
     margin-bottom: 18px;
   }
 }
-
 .textarea-comment__width {
   width: 100% !important;
 }
@@ -148,11 +142,9 @@
 .reaction__section button {
   background-color: unset;
 }
-
 .reaction__section a img {
   fill-opacity: 0.25;
 }
-
 .reaction__section a p {
   color: rgb(112, 112, 112);
 }
@@ -234,7 +226,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 2.2em;
-  column-gap: 2.2em;
+       column-gap: 2.2em;
   min-height: 40px;
   color: rgb(112, 112, 112);
 }
@@ -243,7 +235,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 1.6em;
-  column-gap: 1.6em;
+       column-gap: 1.6em;
   color: rgb(112, 112, 112);
 }
 
@@ -316,24 +308,20 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
-
   .main__container,
   .comments__container,
   .reaction__section {
     padding: 32px 48px;
   }
-
   .reaction__section {
     padding: 0 48px;
   }
-
   .top__comments {
     font-size: 24px;
     margin-left: 20px;
     margin-bottom: 30px;
   }
 }
-
 .textarea-comment__width {
   width: 100% !important;
 }
@@ -341,11 +329,9 @@ main {
 .reaction__section button {
   background-color: unset;
 }
-
 .reaction__section a img {
   fill-opacity: 0.25;
 }
-
 .reaction__section a p {
   color: rgb(112, 112, 112);
 }
@@ -358,3 +344,7 @@ main {
 .reaction__comment--fontsize {
   font-size: 12px;
 }
+
+.nav-spacing {
+  margin-top: 63px !important;
+}/*# sourceMappingURL=styles.css.map */
