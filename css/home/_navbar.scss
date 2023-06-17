@@ -1,0 +1,36 @@
+
+.about1{
+    width:24px;
+    height: 24px;
+}
+.navbar{
+    background-color: white !important;
+}
+
+.contenedorsearch{
+    width: 400px !important;
+    height: 50px !important;
+    margin-top: 8px;
+    margin-left: 10px;
+    display:none;
+}
+
+.container-nav{
+    max-width: 1200px !important;
+}
+
+.hover-effect {
+    transition: filter 0.3s ease;
+    
+    &:hover {
+      filter: contrast(150%);
+      filter: invert(60%) sepia(100%) saturate(2000%) hue-rotate(200deg); /* Aplica efecto de contraste en azul */
+    }
+  }
+  
+@media (min-width :768px) {
+    .contenedorsearch{
+        display: flex;
+    }
+}
+
