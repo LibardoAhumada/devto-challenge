@@ -1,137 +1,26 @@
-// Aquí irá el aside izquierdo
+.icons-post-leftaside {
+    width: 17px;
+    height: 17px;
 
-.sidebar-nav {
-    list-style-type: none;
-}
-
-.author-name-styles:hover {
-    background-color: rgb(244, 244, 245);
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.profile-name-pointer {
-    cursor: pointer !important;
-}
-
-.profile-pic-bg {
-    width: 40px;
-    height: 40px;
-}
-
-.profile-pic-front {
-    width: 24px;
-    height: 24px;
-    margin-left: 15px;
-    border-radius: 50%;
-}
-
-.multiple__reactions {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 2.2em;
-    min-height: 40px;
-    color: rgb(112, 112, 112);
-}
-
-.top__comments {
-    font-size: 16px;
-
-}
-
-.post__title {
-    font-size: 28px;
-    font-weight: bolder;
-    color: black !important;
-}
-
-.follow-bttn:hover {
-    background-color: rgb(45, 110, 253);
-    color: white;
-}
-
-.subscribe-bttn {
-    font-size: 12px !important;
-}
-
-.subscribe-bttn:hover {
-    background-color: rgb(244, 244, 244) !important;
-}
-
-.btn-size {
-    width: 33px !important;
-    height: 30px !important;
-}
-
-.dropdown-font-size {
-    font-size: 12px;
-}
-
-.dropdown-menu {
-    width: 295px !important;
-    height: 222px !important;
-}
-
-.dropdown-header--fontsize {
-    font-size: 14px;
-}
-
-.dropdown-item--fontsize {
-    font-size: 12px;
-}
-
-@media only screen and (min-width: 768px) {
-
-    .main__container,
-    .comments__container,
-    .reaction__section {
-        padding: 32px 48px;
+    &__fill-red:hover {
+        fill: red;
+        background-color: rgba(255, 0, 0, 0.267);
+        border: 1px solid red;
+        border-radius: 50%;
     }
 
-    .reaction__section {
-        padding: 0 48px;
+    &__fill-green:hover {
+        fill: green;
+        background-color: rgba(0, 128, 0, 0.267);
+        border: 1px solid green;
+        border-radius: 50%;
     }
 
-    .top__comments {
-        font-size: 24px;
-        margin-left: 20px;
-        margin-bottom: 18px;
-    }
-}
-
-.textarea-comment__width {
-    width: 100% !important;
-}
-
-.reaction__section {
-    button {
-        background-color: unset;
+    &__fill-purple:hover {
+        fill: purple;
+        background-color: rgba(128, 0, 128, 0.267);
+        border: 1px solid purple;
+        border-radius: 50%;
     }
 
-    a {
-        img {
-            fill-opacity: 0.25;
-        }
-
-        p {
-            color: rgb(112, 112, 112);
-        }
-    }
 }
-
-.reaction__section {
-    button :hover {
-        background-color: rgb(244, 244, 245);
-        border-radius: 5px;
-    }
-}
-
-.reaction__comment--fontsize {
-    font-size: 12px;
-}
-
-
-// .edited-comment-date {
-//     Spacing, ajustar
-//     June 15 · Edited on June 15
-// }

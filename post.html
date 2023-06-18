@@ -12,46 +12,35 @@
 <body>
     <main>
         <header>
-            <nav>
-                <nav class="navbar fixed-top border-bottom p-0 ">
+                <nav class="navbar fixed-top border-bottom p-0">
                     <div class="container-fluid d-flex justify-content-md-between container-nav">
-                        <div class="d-flex ">
-                            <button class="navbar-toggler d-md-none border border-light" type=" button"
+                        <div class="d-flex">
+                            <button class="navbar-toggler d-md-none border border-light" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                                 aria-controls="offcanvasNavbar">
                                 <span class="navbar-toggler-icon d-flex align-items-center"></span>
                             </button>
                             <a href="#">
-                                <img class="" src="./assets/icons/dev_to_icon.png" alt="">
+                                <img class="" src="./assets/icons/dev_to_icon.png" alt="Devto Logo">
                             </a>
-                            
-                            <div class="input-group align-items-center w-auto contenedorsearch ">
+                            <div class="input-group align-items-center w-auto contenedorsearch">
                                 <input id="search-bar" type="text" class="form-control d-none h-75 border-end-0  d-md-flex"
                                     placeholder="Search..." aria-label="Search" aria-describedby="basic-addon1">
                                 <span class="input-group-text d-none d-md-flex h-75  " id="basic-addon1">
-                                    <img class=" d-none d-md-block"
+                                    <img class="d-none d-md-block"
                                         src="./assets/icons/icon-glass.svg"
-                                        alt="">
+                                        alt="Glass Icon">
                                 </span>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <!-- <a href="#" class="text-decoration-none">
-                                <img class="p-1 d-md-none"src="" alt="">
-                                <button type="button" class="btn btn-outline-primary me-1 d-none d-md-block ">LogIn</button>
-                            </a> -->
-    
+                        <div class="d-flex align-items-center">    
                             <a href="#" class="text-decoration-none">
-                                <img class="p-1 d-md-none"src="./assets/icons/icon-glass.svg" alt="">
-                                <button type="button" class="btn btn-outline-primary  d-none d-md-block ">Create Post</button>
+                                <img class="p-1 d-md-none"src="./assets/icons/icon-glass.svg" alt="Glass Icon">
+                                <button type="button" class="btn btn-outline-primary d-none d-md-block">Create Post</button>
                             </a>
-    
-    
-                            
-                            <a href="#"><img class="m-3" src="./assets/icons/icon-campaign.svg" alt=""></a>
-    
+                            <a href="#"><img class="m-3" src="./assets/icons/icon-campaign.svg" alt="Campaign Icon"></a>
                             <div class="dropdown dropstart">
-                                <a class="" id="dropdownm__menu--button" data-bs-toggle="dropdown" aria-expanded="false"> <img class="img-fluid border border-dark rounded-circle " src="./assets/icons/account-avatar-man-svgrepo-com.svg" alt=""></a>
+                                <a class="" id="dropdownm__menu--button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-fluid border border-dark rounded-circle" style="height: 24px; width: 24px; cursor: pointer;" src="./assets/post/main/post-profile-picture-nav.webp" alt="Avatar Profile Picture"></a>
                                 <ul class="dropdown-menu menu-position2" aria-labelledby="dropdownm__menu--button">
                                   <li><a class="dropdown-item" href="#">Kodemia</a></li>
                                   <li><hr class="dropdown-divider"></li>
@@ -60,7 +49,8 @@
                                   <li><a class="dropdown-item" href="#">Reading list</a></li>
                                   <li><a class="dropdown-item" href="#">Settings</a></li>
                                   <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Sing Out</a></li>
+                                  <!-- Sign Out: spacing to be fixed -->
+                                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
                                 </ul>
                               </div>
                         </div>
@@ -75,141 +65,133 @@
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li class="nav-item d-flex align-items-center justify-content-start">
                                         <img src="./assets/icons/icon-home.svg"
-                                            alt=""> <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                            alt="Home Icon"><a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-listings.svg" alt=""><a class="nav-link active"
+                                        <img src="./assets/icons/icon-listings.svg" alt="Home Icon"><a class="nav-link active"
                                             aria-current="page" href="#">Listings</a>
                                     </li>
-                                   
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-podcats.svg" alt=""> <a
+                                        <img src="./assets/icons/icon-podcats.svg" alt="Podcast Icon"><a
                                             class="nav-link active" aria-current="page" href="#">Podcasts</a>
                                     </li>
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-videos.svg" alt=""> <a
+                                        <img src="./assets/icons/icon-videos.svg" alt="Videos Icon"><a
                                             class="nav-link active" aria-current="page" href="#">Videos</a>
                                     </li>
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-tags.svg" alt=""> <a class="nav-link active"
+                                        <img src="./assets/icons/icon-tags.svg" alt="Tags Icon"><a class="nav-link active"
                                             aria-current="page" href="#">Tags</a>
                                     </li>
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-faq.svg" alt=""> <a
+                                        <img src="./assets/icons/icon-faq.svg" alt="FAQ Icon"><a
                                             class="nav-link active" aria-current="page" href="#">FAQ</a>
                                     </li>
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-forem-shop.svg" alt=""> <a
+                                        <img src="./assets/icons/icon-forem-shop.svg" alt="Forem Shop Icon"><a
                                             class="nav-link active" aria-current="page" href="#">Forem Shop</a>
                                     </li>
                                     <li class="nav-item  d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-heart.svg" alt=""> <a class="nav-link active"
+                                        <img src="./assets/icons/icon-heart.svg" alt="Heart Icon"><a class="nav-link active"
                                             aria-current="page" href="#">Sponsors</a>
                                     </li>
                                     <li class="nav-item  d-flex align-items-center justify-content-start">
-                                        <img class="about1" src="./assets/icons/icon-aboutus.svg" alt="">
+                                        <img class="about1" src="./assets/icons/icon-aboutus.svg" alt="About Us Icon">
                                         <a class="nav-link active"aria-current="page" href="#">About</a>
                                     </li>
                                     <li class="nav-item  d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-contact.svg" alt=""> <a
+                                        <img src="./assets/icons/icon-contact.svg" alt="Contact Icon"><a
                                             class="nav-link active" aria-current="page" href="#">Contact</a>
                                     </li>
                                     <li class="nav-item  d-flex align-items-center justify-content-start">
-                                        <img class="about1" src="./assets/icons/icon-guides.svg" alt=""> <a
+                                        <img class="about1" src="./assets/icons/icon-guides.svg" alt="Guides Icon"><a
                                             class="nav-link active" aria-current="page" href="#">Guides</a>
                                     </li>
                                     <li class="nav-item  d-flex align-items-center justify-content-start">
-                                        <img class="about1" src="./assets/icons/icon-software-comparisons.svg" alt=""> <a
+                                        <img class="about1" src="./assets/icons/icon-software-comparisons.svg" alt="Software Comparisons Icon"><a
                                             class="nav-link active" aria-current="page" href="#">Software Comparisons</a>
                                     </li>
-    
-    
-    
                                     <br>
                                     <h5>Others</h5>
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-code-of-conduct.svg" alt=""> <a class="nav-link active"
+                                        <img src="./assets/icons/icon-code-of-conduct.svg" alt="Code Of Conducto Icon"><a class="nav-link active"
                                             aria-current="page" href="#">Code of Conduct</a>
                                     </li>
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-privacy-policy.svg" alt=""> <a
+                                        <img src="./assets/icons/icon-privacy-policy.svg" alt="Privacy Policy Icon"><a
                                             class="nav-link active" aria-current="page" href="#">Privacy Policy</a>
                                     </li>
                                     <li class="nav-item d-flex align-items-center justify-content-start">
-                                        <img src="./assets/icons/icon-terms-of-use.svg" alt=""> <a class="nav-link active"
+                                        <img src="./assets/icons/icon-terms-of-use.svg" alt="Terms Of Use Icon"><a class="nav-link active"
                                             aria-current="page" href="#">Terms of use</a>
                                     </li>
                                 </ul>
-                                </li>
-                                </ul>
                                 <div class="d-flex justify-content-between mt-3">
                                     <a href="https://twitter.com">
-                                        <img src="./assets/icons/icon-twitter.svg" alt="" class="hover-effect">
+                                        <img src="./assets/icons/icon-twitter.svg" alt="Twitter Icon" class="hover-effect">
                                     </a>
                                     <a href="https://www.facebook.com">
-                                        <img src="./assets/icons/icon-facebook.svg" alt="" class="hover-effect">
+                                        <img src="./assets/icons/icon-facebook.svg" alt="Facebook Icon" class="hover-effect">
                                     </a>
                                     <a href="https://github.com">
-                                        <img src="./assets/icons/icon-github.svg" alt="" class="hover-effect">
+                                        <img src="./assets/icons/icon-github.svg" alt="Github Icon" class="hover-effect">
                                     </a>
                                     <a href="https://www.instagram.com">
-                                        <img src="./assets/icons/icon-instagram.svg" alt="" class="hover-effect">
+                                        <img src="./assets/icons/icon-instagram.svg" alt="Instagram Icon" class="hover-effect">
                                     </a>
                                     <a href="https://discord.com">
-                                        <img src="./assets/icons/icon-discord.svg" alt="" class="hover-effect">
+                                        <img src="./assets/icons/icon-discord.svg" alt="Discord Icon" class="hover-effect">
                                     </a>
                                     <a href="https://fosstodon.org">
-                                        <img src="./assets/icons/icon-fosstodon.svg" alt="" class="hover-effect">
+                                        <img src="./assets/icons/icon-fosstodon.svg" alt="Fosstodon Icon" class="hover-effect">
                                     </a>
                                 </div>
-                                
-                                  
                             </div>
                         </div>
                     </div>
                 </nav>
-            </nav>
         </header>
+        <!-- ↓ Sidenav Start -->
         <div class="container md-p-3">
             <div class="nav-spacing"></div>
             <div class="row">
                 <!-- ↓ Sidenav Start -->
                 <div class="col-md-1 d-none d-md-flex justify-content-center post-aside-left">
                     <ul class="sidebar-nav pt-5 px-4 me-3">
-                        <li class="nav-item text-center mb-4">
+                        <li class="text-center mb-4">
                             <a href="#">
                                 <span>
-                                    <img src="./assets/icons/reaction-heart.svg" alt="Heart Icon Reaction">
+                                    <img class="icons-post-leftaside" src="./assets/icons/reaction-heart.svg" alt="Heart Icon Reaction">
                                 </span>
                             </a>
-                            <span class="wrapper-icon--count">
+                            <span class="wrapper-icon--count" style="font-size: 12px;">
                                 25
                             </span>
                         </li>
-                        <li class="nav-item text-center mb-4">
+                        <li class="text-center mb-4">
                             <a href="#">
                                 <span>
-                                    <img src="./assets/icons/reaction-comment.svg" alt="Heart Icon Reaction">
+                                    <img class="icons-post-leftaside" src="./assets/icons/reaction-comment.svg" alt="Comment Icon Reaction">
                                 </span>
                             </a>
-                            <span class="wrapper-icon--count">
+                            <span class="wrapper-icon--count" style="font-size: 12px;">
                                 2
                             </span>
                         </li>
-                        <li class="nav-item text-center mb-4">
+                        <li class="text-center mb-4">
                             <a href="#">
                                 <span>
-                                    <img src="./assets/icons/reaction-save.svg" alt="Heart Icon Reaction">
+                                    <img class="icons-post-leftaside" src="./assets/icons/reaction-save.svg" alt="Save Icon Reaction">
                                 </span>
                             </a>
-                            <span class="wrapper-icon--count">
+                            <span class="wrapper-icon--count" style="font-size: 12px;">
                                 3
                             </span>
                         </li>
-                        <li>
+                        <li class="nav-item rounded">
                             <a href="#">
                                 <span>
-                                    <img src="./assets/icons/reaction-dropdown.svg" alt="Heart Icon Reaction">
+                                    <img style="width: 17px; height: 17px;" src="./assets/icons/reaction-dropdown.svg" alt="Dropdown Icon Reaction">
                                 </span>
                             </a>
                         </li>
@@ -368,7 +350,6 @@
                                 </div>    
                               </div>
                         </div>
-
                         <hr>
                         <section class="comments__container mb-5 p-3">
                             <div class="d-flex justify-content-between">
