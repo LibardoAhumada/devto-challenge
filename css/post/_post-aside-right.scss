@@ -1,32 +1,35 @@
 // Aquí irá el aside derecho
 
-* {
-    margin: 0;
-    padding: 0;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
 
 
-.card-header {      
-    height: 200px;
-    background-color: rgb(57,59,64);
+.card-header {
+  height: 200px;
+  background-color: rgb(57, 59, 64);
 }
 
 .list-group-item {
-    span {
-      font-size: 8px;
-    }
-  
-    .card-link {
-      font-size: 8px;
-    }
-  
-    small {
-      font-size: 8px;
-    }
+  span {
+    font-size: 8px;
   }
-  
 
-.btn {
-    background-color: rgb(55,66,204);
+  .card-link {
+    font-size: 8px;
+  }
+
+  small {
+    font-size: 8px;
+  }
 }
 
+
+.follow-btn-color {
+  background-color: rgb(46, 58, 176) !important;
+}
+
+.follow-btn-color:hover {
+  background-color: rgb(23, 38, 173) !important;
+}

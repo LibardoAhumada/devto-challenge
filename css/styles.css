@@ -280,11 +280,6 @@ main {
   margin-top: 63px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .card-header {
   height: 200px;
   background-color: rgb(57, 59, 64);
@@ -300,6 +295,10 @@ main {
   font-size: 8px;
 }
 
-.btn {
-  background-color: rgb(55, 66, 204);
+.follow-btn-color {
+  background-color: rgb(46, 58, 176) !important;
+}
+
+.follow-btn-color:hover {
+  background-color: rgb(23, 38, 173) !important;
 }/*# sourceMappingURL=styles.css.map */
