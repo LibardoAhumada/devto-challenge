@@ -72,6 +72,14 @@
   background-color: #a0a0a0;
 }
 
+.sidebar-nav {
+  padding-top: 80px !important;
+}
+
+.nav-item:hover {
+  border-radius: 50%;
+}
+
 .icons-post-leftaside__fill-red:hover {
   fill: red;
   background-color: rgba(255, 0, 0, 0.267);
@@ -103,6 +111,7 @@ main {
   cursor: none;
   pointer-events: none;
   text-decoration: none;
+  color: black;
 }
 
 .card__header--bg-color {
@@ -292,7 +301,7 @@ main {
 }
 
 .follow-btn-color {
-  background-color: rgb(46, 58, 176) !important;
+  background-color: rgb(58, 72, 223) !important;
 }
 
 .follow-btn-color:hover {
