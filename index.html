@@ -23,7 +23,7 @@
 
 
 
-    
+<!--     
 
     <header>
         <nav>
@@ -181,7 +181,7 @@
                 </div>
             </nav>
         </nav>
-    </header>
+    </header> -->
 
     <main>
         <div class="page__container d-flex">
@@ -196,7 +196,7 @@
                         </ul>
                     </div>
 
-                    <div class="container__card--post-test shadow-sm rounded overflow-hidden bg-light">
+                    <div class="container__card--post-test shadow-sm overflow-hidden rounded bg-light">
                         <img src="./assets/home/main/post-header-image.webp" alt="" class="post-test--image ratio ratio-16*9">
                         <div class="post-test--body p-3">
                             <div class="post-test--user-info d-flex gap-2">
@@ -204,32 +204,66 @@
                                     <img src="./assets/home/main/profile-picture-1.gif" alt="" class="profile-icon--container-image rounded">
                                 </div>
                                 <div class="user-info--data">
-                                    <p class="user-info--username"> <strong> <a href="https://dev.to/fernandezbaptiste" class="text-decoration-none text-reset" >Bap</a></strong> for <a class="text-decoration-none text-reset" href="https://dev.to/quine">Quine</a></p>
+                                    <div class="dropdown">
+                                        <p class="user-info--username"> <strong> <a href="https://dev.to/fernandezbaptiste" class="dropbtn text-decoration-none text-reset" >Bap</a></strong> for <a class="text-decoration-none text-reset" href="https://dev.to/quine">Quine</a></p>
+                                        <div class="dropdown-content">
+                                            <div class="dropdown-content--top-color-design"></div>
+                                            <div class="dropdown-content--user-data">
+                                                <div class="user-data--profile-icon"></div>
+                                                <p>username username</p>
+                                            </div>
+                                            <button>button</button>
+                                            <p class="user-data--tagline">tagline test</p>
+                                            <div class="user-data--email">
+                                                <b>email</b>
+                                                <p>email@email.com</p>
+                                            </div>
+                                            <div class="user-data--work">
+                                                <b>work</b>
+                                                <p>name of company, position, activities</p>
+                                            </div>
+                                            <div class="user-data--location">
+                                                <b>location</b>
+                                                <p>city, country</p>
+                                            </div>
+                                            <div class="user-data--education">
+                                                <b>education</b>
+                                                <p>university of coding</p>
+                                            </div>
+                                            <div class="user-data--joined">
+                                                <b>joined</b>
+                                                <p>date, 03, 4002</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <small class="user-info--post-time">Posted on Jun 14</small>
                                 </div>
                             </div>
                             <div class="post-test--title my-2 text-wrap"> <h2 class="mb-0"> <strong> <a class="link-post" href="./post.html">5 Surprising Benefits of Contributing to Open Source [Beginner Edition] &#128640;</a> </strong></h2></div>
                             <div class="post-test--hashtags">
                                 <ul class="hashtags--list d-flex flex-wrap list-unstyled gap-1">
-                                    <li><span>#</span>beginners</li>
-                                    <li><span>#</span>opensource</li>
-                                    <li id="hashtag-background">#career</li>
-                                    <li id="hashtag-background">#github</li>
+                                    <li class="hashtag-background d-flex align-items-center"><span>#</span>beginners</li>
+                                    <li class="hashtag-background d-flex align-items-center"><span>#</span>opensource</li>
+                                    <li class="hashtag-background d-flex align-items-center">#career</li>
+                                    <li class="hashtag-background d-flex align-items-center">#github</li>
                                 </ul>
                             </div>
                             <div class="post-test--post-actions d-flex flex-wrap gap-2">
-                                <div class="post-actions--icon-row d-flex">
-                                    <img id="icon-number--1" src="./assets/icons/reaction-love.svg" alt="">
-                                    <img id="icon-number--2" src="./assets/icons/reaction-unicorn.svg" alt="">
-                                    <img id="icon-number--3" src="./assets/icons/reaction-exploding.svg" alt="">
-                                    <img id="icon-number--4" src="./assets/icons/reaction-raised-hands.svg" alt="">
-                                    <img id="icon-number--5" src="./assets/icons/reaction-fire.svg" alt="">
+                                <div class="hover-reaction-test d-flex align-items-center">
+                                    <div class="post-actions--icon-row d-flex align-items-center">
+                                        <img id="icon-number--1" src="./assets/icons/reaction-love.svg" alt="">
+                                        <img id="icon-number--2" src="./assets/icons/reaction-unicorn.svg" alt="">
+                                        <img id="icon-number--3" src="./assets/icons/reaction-exploding.svg" alt="">
+                                        <img id="icon-number--4" src="./assets/icons/reaction-raised-hands.svg" alt="">
+                                        <img id="icon-number--5" src="./assets/icons/reaction-fire.svg" alt="">
+                                    </div>
+                                    <p class="post-actions--reactions-text mb-0">16 reactions</p>
                                 </div>
-                                <p class="post-actions--reactions-text m-0">25 reactions</p>
-                                <img class="post-actions--comment-icon" src="./assets/icons/reaction-comment.svg" alt="">
-                                <p class="post-actions--comment-number m-0">3 comments</p>
-                                <small class="post-actions--read-duration" ></small>
-                                <img class="post-actions--bookmark-icon" src="./assets/icons/reaction-save.svg" alt="">
+                                <p class="post-actions--comment-number m-0 d-flex align-items-center"> <img src="./assets/icons/reaction-comment.svg" alt=""> 2 comments</p>
+                                <small class="post-actions--read-duration" >3 min</small>
+                                <div class="post-actions--bookmark-container d-flex align-items-center">
+                                    <img class="post-actions--bookmark-icon" src="./assets/icons/reaction-save.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -147,12 +147,15 @@
 .post-actions--reactions-text {
     position: relative;
     right: 30px;
+    transition: transform 0.3s;
+
 }
 
-.post-actions--reactions-text:hover {
+.post-actions--icon-row:hover {
     background-color: #c6c6c6;
     cursor: pointer;
     border-radius: 3px;
+    transform: translateX(-30px);
 }
 
 .post-actions--comment-icon {
