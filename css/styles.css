@@ -61,6 +61,9 @@
   
   .hashtags--list {
       margin-left: 31px;
+      font-weight: 350;
+      font-size: 15px;
+      color: rgb(80, 80, 80);
   }
 
   .hashtags--list li{
@@ -91,6 +94,9 @@
       margin-left: 29px;
       align-items: center;
       margin-bottom: 10px;
+      font-weight: 349;
+      font-size: 16px;
+      color: rgb(78, 78, 78);
   }
   
   .profile-icon--container-image {
@@ -119,17 +125,44 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
+    background-color: #ffffff;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 7;
   }
 
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
+    margin-left: 10px;
+  }
+
+
+  .dropdown-content--user-data {
+    position: relative; 
+    bottom: 20px;
+    left: 18px;
+  }
+
+  .user-data--button {
+    margin-left: 18px;
+    width: 270px;
+  }
+
+  .user-data--tagline {
+    margin-left: 18px;
+    margin-top: 10px;
+    color: grey;
+  }
+
+  .user-data--details {
+    margin-left: 18px;
+  }
+
+  .user-data--details b {
+    color: rgb(99, 99, 99); 
+    font-size: small;
   }
 
   .link-post {
@@ -141,14 +174,31 @@
     background-color: #ddd;
   }
   
+  .user-data--profile-icon img{
+    background-color: rgb(108, 108, 108);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+  }
+.user-data--profile-name-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.user-data--profile-name {
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
   }
   
-/* .container__card--post-test :not(dropdown-content){
-  overflow: hidden;
-} */
-
+.dropdown-content--top-color-design {
+  height: 36px;
+  width: auto; 
+  background-color: navy;
+}
   #icon-number--1 {
       position: relative;
       z-index: 5;
@@ -209,7 +259,12 @@
       position: relative;
       right: 0px;
       height: 35px;
+      width: 132px;
   }
+
+.post-actions--comment-number img {
+  margin-left: 8px;
+} 
   
 
 .post-actions--comment-number:hover {
@@ -251,7 +306,8 @@
       margin-left: auto;
   
   }
-  
+     
+
   @media only screen and (max-width:576px) {
       .post-actions--reactions-text {
           display: none;
